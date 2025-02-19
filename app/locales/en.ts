@@ -9,13 +9,13 @@ const en: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
     Unauthorized: isApp
-      ? `😆 Oops, there's an issue. No worries:
-     \\ 1️⃣ New here? [Click to start chatting now 🚀](${SAAS_CHAT_UTM_URL})
-     \\ 2️⃣ Want to use your own OpenAI resources? [Click here](/#/settings) to change settings ⚙️`
-      : `😆 Oops, there's an issue. Let's fix it:
-     \ 1️⃣ New here? [Click to start chatting now 🚀](${SAAS_CHAT_UTM_URL})
-     \ 2️⃣ Using a private setup? [Click here](/#/auth) to enter your key 🔑
-     \ 3️⃣ Want to use your own OpenAI resources? [Click here](/#/settings) to change settings ⚙️
+      ? `This website hosts Xuc's private AI assistant, which requires a password for access. You now have the following options:  
+     \\ 1️⃣ [Go to the NextChat official site](${SAAS_CHAT_UTM_URL})  
+     \\ 2️⃣ Go to [Settings](/#/settings) to enter your own API Key`
+      : `This website hosts Xuc's private AI assistant, which requires a password for access. You now have the following options:  
+     \ 1️⃣ [Go to the NextChat official site](${SAAS_CHAT_UTM_URL})  
+     \ 2️⃣ Go to [Login](/#/auth) to enter the password provided by Xuc  
+     \ 3️⃣ Go to [Settings](/#/settings) to enter your own API Key
      `,
   },
   Auth: {
@@ -26,9 +26,8 @@ const en: LocaleType = {
     Input: "access code",
     Confirm: "Confirm",
     Later: "Later",
-    SaasTips: "Too Complex, Use Immediately Now",
-    TopTips:
-      "🥳 NextChat AI launch promotion: Instantly unlock the latest models like OpenAI o1, GPT-4o, Claude-3.5!",
+    SaasTips: "Go to the NextChat official site",
+    TopTips: "",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} messages`,
@@ -629,7 +628,7 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
+    BotHello: "Hello! I am Xuc's AI assistant. How can I assist you today?",
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
